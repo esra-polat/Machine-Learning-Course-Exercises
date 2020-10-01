@@ -1,10 +1,5 @@
 function [theta] = trainLinearReg(X, y, lambda)
-%TRAINLINEARREG Trains linear regression given a dataset (X, y) and a
-%regularization parameter lambda
-%   [theta] = TRAINLINEARREG (X, y, lambda) trains linear regression using
-%   the dataset (X, y) and regularization parameter lambda. Returns the
-%   trained parameters theta.
-%
+warning("off", "Octave:divide-by-zero");
 
 % Initialize Theta
 initial_theta = zeros(size(X, 2), 1); 
@@ -17,5 +12,6 @@ options = optimset('MaxIter', 200, 'GradObj', 'on');
 
 % Minimize using fmincg
 theta = fmincg(costFunction, initial_theta, options);
+warning("on", "Octave:divide-by-zero");
 
 end

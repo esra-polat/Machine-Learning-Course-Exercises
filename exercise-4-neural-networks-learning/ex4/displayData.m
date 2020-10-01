@@ -1,8 +1,4 @@
 function [h, display_array] = displayData(X, example_width)
-%DISPLAYDATA Display 2D data in a nice grid
-%   [h, display_array] = DISPLAYDATA(X, example_width) displays 2D data
-%   stored in X in a nice grid. It returns the figure handle h and the 
-%   displayed array if requested.
 
 % Set example_width automatically if not passed in
 if ~exist('example_width', 'var') || isempty(example_width) 
@@ -24,8 +20,7 @@ display_cols = ceil(m / display_rows);
 pad = 1;
 
 % Setup blank display
-display_array = - ones(pad + display_rows * (example_height + pad), ...
-                       pad + display_cols * (example_width + pad));
+display_array = - ones(pad + display_rows * (example_height + pad), pad + display_cols * (example_width + pad));
 
 % Copy each example into a patch on the display array
 curr_ex = 1;
