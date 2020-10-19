@@ -1,7 +1,6 @@
 ### VisualStudioCode ###
 .vscode
-exercise-5-regularized-linear-regression-and-bias-vs-variance\ex5\token.mat
-exercise-4-neural-networks-learning\ex4\token.mat
+*\token.mat
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 **/.history
