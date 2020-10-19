@@ -6,10 +6,8 @@ clear ; close all; clc
 
 %% =========== Part 1: Loading and Visualizing Data =============
 
-% Load Training Data
 fprintf('Loading and Visualizing Data ...\n')
 
-% Load from ex5data1: 
 % You will have X, y, Xval, yval, Xtest, ytest in your environment
 load ('ex5data1.mat');
 
